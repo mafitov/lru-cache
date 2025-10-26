@@ -1,14 +1,14 @@
-## LRU Cache
+# LRU Cache
 
 This project implements a simple **Least Recently Used (LRU) Cache** mechanism in Java using a `HashMap` and a `PriorityQueue` to manage cache entries based on access time.  
 The cache automatically removes the least recently used item when it reaches its maximum capacity.
 
-### Overview
+## Overview
 
 An **LRU Cache** is a caching strategy that discards the least recently accessed items first when the cache reaches its limit.  
 This implementation provides a basic demonstration of LRU logic by storing token checksums.
 
-### Implementation Details
+## Implementation Details
 
 **Key Components:**
 - **`CACHE`**: A `HashMap<String, Integer>` that stores cached items (token → checksum).
@@ -24,7 +24,7 @@ When an item is accessed:
     - If the cache is full, the least recently used item is evicted.
     - The new item is added to the cache and queue.
 
-### How It Works
+## How It Works
 
 `getChecksum(String key)`
 
@@ -40,7 +40,7 @@ Computes a simple checksum by summing ASCII values of characters and taking a mo
 
 Finds and returns the `KEY` object corresponding to a given token in the priority queue.
 
-### Technologies Used
+## Technologies Used
 
 - Java 17+
 - `HashMap` for constant-time lookups.
